@@ -1,0 +1,176 @@
+/* Estilizando o body */
+body {
+  background-color: #FFFFFF;
+  /* min-height: 100vh; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Centraliza vertical */
+  align-items: center;       /* Centraliza horizontal */
+}
+
+/* Estilo para a home */
+.body-home {
+  justify-content: center;
+}
+
+/* Menu principal */
+.menu-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #307063;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;   /* força a ocupar toda a largura */
+  box-sizing: border-box; /* evita estourar com padding */
+}
+
+/* logo */
+.menu-principal img {
+  height: 50px;
+}
+
+/* centralização da barra de navegação */
+.menu-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* estilização da barra de navegação */
+.menu-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease, background 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.menu-nav li a:hover {
+  background-color: #1f4f3d;
+  color: white;
+  box-shadow: 0 0 8px #1f4f3d;
+}
+
+.entre-em-contato-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #F2EDE4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Título principal */
+.titulo-principal h1 {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Div de contato */
+.div1-entre-em-contato {
+  width: 100%;
+  max-width: 400px;
+}
+
+.div1-entre-em-contato h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Grupo de inputs */
+.input-grupo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.input-grupo label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.input-grupo input,
+.input-grupo textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #1a0c2b;
+  box-sizing: border-box;
+}
+
+/* Botão de envio */
+.envia-form {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #740B0D;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.envia-form:hover {
+  background-color: #c00b0e;
+}
+
+
+/* Responsividade para telas menores */
+@media only screen and (max-width: 768px) {
+
+  .menu-principal, .menu-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-principal img, .menu-nav {
+    margin-bottom: 10px;
+  }
+
+  .contato {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .entre-em-contato-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .div1-entre-em-contato {
+    width: 100%;
+  }
+
+  .titulo-pricipal {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .titulo-pricipal h1 {
+    font-size: 16px;
+  }
+
+  .div1-entre-em-contato h2 {
+    font-size: 24px;
+  }
+}
